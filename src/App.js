@@ -1,7 +1,11 @@
+// TODO: Implement State Management using redux
+// TODO: Generate a random card out of the cardbox (easy)
+
 import React from 'react'
 import Sidebar from './Components/Sidebar';
 import Cardbox from './Components/Cardbox';
 import './App.css'
+
 
 const discord_colors = {
   'col1': '#1e2124',

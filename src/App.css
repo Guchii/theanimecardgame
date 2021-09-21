@@ -1,13 +1,10 @@
-@import './icofont/icofont.css';
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600&display=swap');
 *{
     font-family: 'Big Shoulders Text', cursive;
 }
 .Sidebar {
-    height: 100vh;
 }
-.Chatbox {
-    height: 100vh;
+.Cardbox {
 }
 
 .dcolor::hover{
@@ -16,6 +13,5 @@
 
 .myCard {
     width: 18rem;
-    margin-left: 8px;
+    margin: 8px;
 }
-
