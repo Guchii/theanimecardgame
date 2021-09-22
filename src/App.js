@@ -1,5 +1,6 @@
 // TODO: Generate a random card out of the cardbox (easy)
 // TODO: Separate cards with tier, Change their probability
+// TODO: Add a Clock, let user draw after 1 hour.
 // TODO: Implement firebase
 // TODO: Implement user login and profile
 // TODO: add trading support
@@ -8,6 +9,7 @@ import React from 'react'
 import Sidebar from './Components/Sidebar';
 import Cardbox from './Components/Cardbox';
 import './App.css'
+import {useSelector, useDispatch} from 'react-redux';
 
 const discord_colors = {
     'col1': '#1e2124',
@@ -17,6 +19,9 @@ const discord_colors = {
     'col5': '#7289da'
 }
 const App = () => {
+    const HeroData= useSelector((state)=> state.changeAllCards);
+    const userData= useSelector((state)=> state.changeUserCards);
+    const dispatch = useDispatch();
     return (
         <div className="container-fluid">
             <div className="row">
@@ -24,7 +29,7 @@ const App = () => {
                     <Sidebar/>
                 </div>
                 <div className="Cardbox col" style={{'background-color': discord_colors.col2, color: 'white'}}>
-                    <Cardbox/>
+                    <Cardbox HeroData={HeroData} userData={userData}/>
                 </div>
             </div>
         </div>

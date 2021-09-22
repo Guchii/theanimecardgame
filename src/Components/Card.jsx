@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Card = ({HeroData, count}) => {
     return (
         <div className="card myCard bg-light">
