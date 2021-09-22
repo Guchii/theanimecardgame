@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState} from 'react'
 import Card from './Card'
 import { drawCard } from '../scripts/generateRandomCard'
 
@@ -32,32 +32,31 @@ const HeroData = [{
 ]
 
 const Cardbox = () => {
-  const [userData, updateUserData] = useState([]);
-  useEffect(() => {
-    alert("all cards loaded");
-  }, [])
+    const [userData, updateUserData] = useState([]);
+    let available = Boolean(userData.length); //boolean
+    // useEffect(() => {
+    //   alert("Welcome");
+    // }, [])
 
-  const addCard = () => {
-    updateUserData([...userData, drawCard(HeroData)]);
-  }
+    const addCard = () => {
+        updateUserData([...userData, drawCard(HeroData)]);
+    }
+    return (
+        <div className="container py-4">
+            <div className="row">
+                <h4 className='col'>Your Box</h4>
+                <button className="btn btn-dark btn-sm col" onClick={addCard}>Draw a card Total Cards
+                    available: {HeroData.length}</button>
+            </div>
 
-  let available = userData.length; //boolean
-
-  return (
-    <div className="container py-4">
-      <div className="row">
-        <h4 className='col'>Your Box</h4>
-        <button className="btn btn-dark btn-sm dcolor col" onClick={addCard}>Draw a card Total Cards available: {HeroData.length}</button>
-      </div>
-
-      <hr />
-      <div className="row">
-        {available ?
-          userData.map((Hero) => {
-            return <Card HeroData={Hero} />
-          }) : <NothingToShow />}
-      </div>
-    </div>
-  )
+            <hr/>
+            <div className="row">
+                {available ?
+                    userData.map((Hero) => {
+                        return <Card HeroData={Hero}/>
+                    }) : <NothingToShow/>}
+            </div>
+        </div>
+    )
 }
 export default Cardbox

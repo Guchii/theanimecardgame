@@ -7,10 +7,6 @@
 .Cardbox {
 }
 
-.dcolor::hover{
-    color: #7289da;
-}
-
 .myCard {
     width: 18rem;
     margin: 8px;
