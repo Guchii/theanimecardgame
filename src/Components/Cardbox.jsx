@@ -37,7 +37,7 @@ const HeroData = [
 ]
 
 const Cardbox = () => {
-    const [userData, updateUserData] = useState([]);
+    const [userData, updateUserData] = useState(() => []);
     let available = Boolean(userData.length); //boolean
 
     // useEffect(() => {
@@ -55,6 +55,7 @@ const Cardbox = () => {
     const addCard = () => {
         updateUserData([...userData, drawCard(HeroData)]);
     }
+    const uniqueUserData = [...new Set(userData)];
     return (
         <div className="container py-4">
             <div className="row">
@@ -65,8 +66,9 @@ const Cardbox = () => {
             <hr/>
             <div className="row">
                 {available ?
-                    userData.map((Hero) => {
-                        return <Card key={HeroData.name} HeroData={Hero} count={countCards(userData, Hero)} />
+                    uniqueUserData.map((Hero) => {
+                        const noOfHeroCardWithUser = countCards(userData, Hero);
+                        return <Card key={Hero.name} HeroData={Hero} count={noOfHeroCardWithUser}/>;
                     }) : <NothingToShow/>}
             </div>
         </div>
