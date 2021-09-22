@@ -9,7 +9,6 @@ import Sidebar from './Components/Sidebar';
 import Cardbox from './Components/Cardbox';
 import './App.css'
 
-
 const discord_colors = {
     'col1': '#1e2124',
     'col2': '#282b30',
@@ -20,7 +19,7 @@ const discord_colors = {
 const App = () => {
     return (
         <div className="container-fluid">
-            <div class="row">
+            <div className="row">
                 <div className="Sidebar col-3" style={{'background-color': discord_colors.col1, color: 'white'}}>
                     <Sidebar/>
                 </div>

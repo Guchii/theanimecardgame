@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600&display=swap');
-*{
+
+* {
     font-family: 'Big Shoulders Text', cursive;
 }
+
 .Sidebar {
 }
+
 .Cardbox {
 }
 
