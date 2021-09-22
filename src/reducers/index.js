@@ -1,10 +1,10 @@
-import changeUserCards from "./cardsupdown";
-import {combineReducers} from 'redux';
-import changeAllCards from "./AllCards";
+import userCardsReducer from "./UserCards";
+import { combineReducers } from 'redux';
+import allCardsReducer from "./AllCards";
 
 const rootReducer = combineReducers({
-    changeUserCards,
-    changeAllCards
+    userCardsReducer,
+    allCardsReducer
 })
 
 export default rootReducer;

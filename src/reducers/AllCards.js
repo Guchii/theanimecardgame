@@ -31,9 +31,9 @@ const initialState = [
 
 const changeAllCards = (state=initialState, action)=>{
     switch(action.type){
-        case "ADD":
+        case "ADD_TO_ALL_CARDS":
             return [...state, action.newCard];
-        case "REMOVE":
+        case "REMOVE_FROM_ALL_CARDS":
             return [...state, action.newCard];
         default:
             return state;
