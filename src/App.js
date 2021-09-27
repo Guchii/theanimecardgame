@@ -12,18 +12,6 @@ import { useEffect } from 'react'
 import "./App.css";
 import { currentTime } from './scripts/date'
 
-const postData = async(e) => {
-    e.preventDefault();
-    const res = await fetch(
-        "https://animecardgame1-default-rtdb.asia-southeast1.firebasedatabase.app/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: { }
-        }
-    )
-}
 
 const discord_colors = {
 col1: "#1e2124",
