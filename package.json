@@ -10,13 +10,17 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
+    "eslint-plugin-react": "^7.26.0",
+    "firebase": "^9.1.0",
     "framer-motion": "^4.1.17",
     "react": "^17.0.2",
+    "react-awesome-button": "^6.5.1",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
+    "sass": "^1.42.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

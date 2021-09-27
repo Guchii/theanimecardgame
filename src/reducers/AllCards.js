@@ -27,6 +27,20 @@ const initialState = [
         power_level: 90,
         tier: 'S'
     },
+    {
+        name: "Son Goku",
+        desc: "Very OP BHAI OP ultra instinct",
+        image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic2.cbrimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2020%2F04%2FGoku-Mistake-Laughing-Dragon-Ball-Super.jpg&f=1&nofb=1",
+        power_level: 95,
+        tier: 'S'
+    },
+    {
+        name: "Gojo Satoru",
+        desc: "OP BHAI OP",
+        image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YSuXe-DWFb6NhBRqI5KtCgHaHa%26pid%3DApi&f=1",
+        power_level: 95,
+        tier: 'S'
+    }
 ]
 
 const changeAllCards = (state=initialState, action)=>{

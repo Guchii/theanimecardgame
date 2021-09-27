@@ -6,6 +6,7 @@ export const removeCard = (card) => {
         newCard: card
     }
 }
+
 export const addCard = (card) => {
     return {
         type: "ADD_TO_USER_CARDS",

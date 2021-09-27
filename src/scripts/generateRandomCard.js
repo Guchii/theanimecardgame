@@ -13,6 +13,5 @@ export const getRandomNumber = (min, max) => {
 
 export const drawCard = (cards) => {
     let rand = getRandomNumber(0, cards.length-1);
-    console.log(rand)
     return cards[rand];
 }
