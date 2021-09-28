@@ -1,15 +1,12 @@
 // TODO: Separate cards with tier, Change their probability
-// TODO: Add a Clock, let user draw after 1 hour.
 // TODO: Implement firebase
 // TODO: Implement user login and profile
 // TODO: add trading support
 
-import React from "react"
+import React, { useEffect } from "react"
 import Sidebar from "./Components/Sidebar"
 import Cardbox from "./Components/Cardbox"
-import { useEffect } from "react"
 import "./App.css"
-import { currentTime } from "./scripts/date"
 
 const discord_colors = {
     col1: "#1e2124",
@@ -21,9 +18,10 @@ const discord_colors = {
 
 const App = () => {
     useEffect(() => {
-        console.log(currentTime())
-    })
-
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault()
+        })
+    }, [])
     return (
         <div className="container-fluid myContainer">
             <div className="row">
@@ -49,5 +47,4 @@ const App = () => {
         </div>
     )
 }
-
 export default App
