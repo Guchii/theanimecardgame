@@ -1,10 +1,12 @@
-import userCardsReducer from "./UserCards";
-import { combineReducers } from 'redux';
-import allCardsReducer from "./AllCards";
+import { combineReducers } from "redux"
+import userCardsReducer from "./UserCards"
+import allCardsReducer from "./AllCards"
+import userInfoReducer from "./userInfo"
 
 const rootReducer = combineReducers({
     userCardsReducer,
-    allCardsReducer
+    allCardsReducer,
+    userInfoReducer,
 })
 
-export default rootReducer;
+export default rootReducer
