@@ -1,10 +1,19 @@
 {
-    "useTabs": true,      // Indent lines with tabs instead of spaces.
-    "printWidth": 80,      // Specify the length of line that the printer will wrap on.
-    "tabWidth": 4,         // Specify the number of spaces per indentation-level.
-    "singleQuote": false,  // Use single quotes instead of double quotes.
-    "trailingComma": "none",
-    "jsxBracketSameLine": true,
-    "noSemi": true,
-    "rcVerbose": true
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": false,
+  "singleQuote": false,
+  "tabWidth": 4,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false
 }
