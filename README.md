@@ -12,7 +12,7 @@ A card trading multiplayer game which features many of your favourite anime char
 
 ## Status
 
-Project is in it's initial phase and Isn't live yet.
-I'll add new stuff as I learn them, I'm very new to web development stuff.
+- Project is in it's Initial phase and Isn't live yet.
+- I'll add new stuff as I learn them, I'm very new to web development stuff.
 
-![Game's Current look](./preview.png?raw=true "Title")
+![Game's Current look](./preview.png?raw=true "Game's Current look")
