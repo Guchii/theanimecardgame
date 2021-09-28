@@ -3,6 +3,7 @@ import Card from "./Card"
 import { drawCard } from "../scripts/generateRandomCard"
 import { useDispatch, useSelector } from "react-redux"
 import { addCard, setDrawTime } from "../actions"
+import cogoToast from "cogo-toast"
 
 const NothingToShow = () => <p className="disMessage">No Cards to Display</p>
 
@@ -30,9 +31,17 @@ const Cardbox = () => {
                         const cTime = Math.round(Date.now() / 1000)
                         if (cTime - userInfo.lastDrawTime > 10) {
                             dispatch(addCard(drawCard(heroData)))
+                            cogoToast.success(
+                                "Card Added To Your Box successfully!",
+                                { position: "top-right" }
+                            )
                             dispatch(setDrawTime())
                         } else {
                             console.log("You cannot Draw Cards consecutively.")
+                            cogoToast.warn(
+                                "You can only draw cards once in an Hour 😕",
+                                { position: "top-right" }
+                            )
                         }
                     }}
                 >

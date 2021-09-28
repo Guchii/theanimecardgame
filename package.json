@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
+    "cogo-toast": "^4.2.3",
     "eslint-plugin-react": "^7.26.0",
     "firebase": "^9.1.0",
     "framer-motion": "^4.1.17",
