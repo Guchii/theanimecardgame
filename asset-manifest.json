@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/theanimecardgame/static/css/main.3d720b0a.chunk.css",
-    "main.js": "/theanimecardgame/static/js/main.c1fb8f41.chunk.js",
-    "main.js.map": "/theanimecardgame/static/js/main.c1fb8f41.chunk.js.map",
+    "main.js": "/theanimecardgame/static/js/main.bb437acb.chunk.js",
+    "main.js.map": "/theanimecardgame/static/js/main.bb437acb.chunk.js.map",
     "runtime-main.js": "/theanimecardgame/static/js/runtime-main.90afd93f.js",
     "runtime-main.js.map": "/theanimecardgame/static/js/runtime-main.90afd93f.js.map",
     "static/css/2.e5f9f6f2.chunk.css": "/theanimecardgame/static/css/2.e5f9f6f2.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.e5f9f6f2.chunk.css",
     "static/js/2.2fcb8f9e.chunk.js",
     "static/css/main.3d720b0a.chunk.css",
-    "static/js/main.c1fb8f41.chunk.js"
+    "static/js/main.bb437acb.chunk.js"
   ]
 }
