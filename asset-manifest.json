@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/theanimecardgame/static/css/main.3d720b0a.chunk.css",
+    "main.js": "/theanimecardgame/static/js/main.5aa7a278.chunk.js",
+    "main.js.map": "/theanimecardgame/static/js/main.5aa7a278.chunk.js.map",
+    "runtime-main.js": "/theanimecardgame/static/js/runtime-main.90afd93f.js",
+    "runtime-main.js.map": "/theanimecardgame/static/js/runtime-main.90afd93f.js.map",
+    "static/css/2.e5f9f6f2.chunk.css": "/theanimecardgame/static/css/2.e5f9f6f2.chunk.css",
+    "static/js/2.2fcb8f9e.chunk.js": "/theanimecardgame/static/js/2.2fcb8f9e.chunk.js",
+    "static/js/2.2fcb8f9e.chunk.js.map": "/theanimecardgame/static/js/2.2fcb8f9e.chunk.js.map",
+    "index.html": "/theanimecardgame/index.html",
+    "static/css/2.e5f9f6f2.chunk.css.map": "/theanimecardgame/static/css/2.e5f9f6f2.chunk.css.map",
+    "static/css/main.3d720b0a.chunk.css.map": "/theanimecardgame/static/css/main.3d720b0a.chunk.css.map",
+    "static/js/2.2fcb8f9e.chunk.js.LICENSE.txt": "/theanimecardgame/static/js/2.2fcb8f9e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90afd93f.js",
+    "static/css/2.e5f9f6f2.chunk.css",
+    "static/js/2.2fcb8f9e.chunk.js",
+    "static/css/main.3d720b0a.chunk.css",
+    "static/js/main.5aa7a278.chunk.js"
+  ]
+}
