@@ -13,6 +13,7 @@ const Cardbox = () => {
     const userInfo = useSelector((state) => state.userInfoReducer)
     let dispatch = useDispatch()
     let available = Boolean(userData.length) //boolean
+
     const countCards = (arr, toFind) => {
         let counter = 0
         for (let i = 0; i < arr.length; i++) {
@@ -20,27 +21,28 @@ const Cardbox = () => {
         }
         return counter
     }
+
     const uniqueUserData = [...new Set(userData)] //removes duplicate values
+
     return (
         <div className="container py-4">
             <div className="row">
-                <h4 className="col">Your Box</h4>
+                <h4 className="col">Your Box ({userData.length})</h4>
                 <button
                     className="btn btn-dark btn-sm col"
                     onClick={() => {
                         const cTime = Math.round(Date.now() / 1000)
-                        if (cTime - userInfo.lastDrawTime > 10) {
+                        if (cTime - userInfo.lastDrawTime > 1) {
                             dispatch(addCard(drawCard(heroData)))
                             cogoToast.success(
-                                "Card Added To Your Box successfully!",
-                                { position: "top-right" }
+                                "Card was added to your Box Successfully!",
+                                { position: "bottom-right" }
                             )
                             dispatch(setDrawTime())
                         } else {
-                            console.log("You cannot Draw Cards consecutively.")
                             cogoToast.warn(
                                 "You can only draw cards once in an Hour 😕",
-                                { position: "top-right" }
+                                { position: "bottom-right" }
                             )
                         }
                     }}

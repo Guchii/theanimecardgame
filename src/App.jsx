@@ -7,6 +7,7 @@ import React, { useEffect } from "react"
 import Sidebar from "./Components/Sidebar"
 import Cardbox from "./Components/Cardbox"
 import "./App.css"
+import "github-fork-ribbon-css/gh-fork-ribbon.css"
 
 const discord_colors = {
     col1: "#1e2124",
@@ -22,8 +23,9 @@ const App = () => {
             e.preventDefault()
         })
     }, [])
+
     return (
-        <div className="container-fluid myContainer">
+        <div className="container-fluid myContainer position-relative">
             <div className="row">
                 <div
                     className="Sidebar col-3 sticky-top"
@@ -44,7 +46,15 @@ const App = () => {
                     <Cardbox />
                 </div>
             </div>
+            <div
+                class="github-fork-ribbon"
+                data-ribbon="This is a Demo"
+                title="This is a Demo"
+            >
+                Fork me on GitHub
+            </div>
         </div>
     )
 }
+
 export default App

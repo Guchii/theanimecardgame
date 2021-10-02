@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600&display=swap");
 
 * {
-    font-family: 'Big Shoulders Text', cursive;
+    font-family: "Big Shoulders Text", cursive;
     padding: 0;
     margin: 0;
 }
 .Sidebar {
     height: 100vh;
-    top:0px;
+    top: 0px;
 }
 
 .Cardbox {
     height: auto;
 }
-
 
 .counter {
     background-color: yellowgreen;
@@ -26,26 +25,27 @@
     right: -15px;
 }
 
-.counter2{
+.counter2 {
     position: relative;
     bottom: -5px;
 }
 
-.heroName{
+.heroName {
     position: absolute;
     display: block;
     color: white;
     background-color: orangered;
-    transform-origin:bottom left;
+    transform-origin: bottom left;
     transform: rotate(-90deg);
     left: 28px;
     bottom: -8px;
     padding-right: 10px;
     padding-left: 5px;
 }
+
 .heroStats {
-   position: absolute;
-   bottom:0;
-   right: 0;
-   padding-right: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
 }
