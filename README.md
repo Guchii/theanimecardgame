@@ -2,6 +2,10 @@
 
 A card trading multiplayer game which features many of your favourite anime characters (anime girls too!!). 
 
+---
+
+Demo/Preview of the project is available [here](https://guchii.github.io/theanimecardgame/)
+
 ## How What Why ??
 
 - you start with 0 cards initially.
